@@ -1,0 +1,41 @@
+<div id="mainContent">
+
+<h1>Create new Employee</h1>
+<div id="employeeCard">
+    <form [formGroup]="employeeForm" (ngSubmit)="onSubmit()" class="myForm">
+<mat-card>
+
+    <mat-card-content>
+    
+            <div class="myInputs">
+            <mat-form-field class="example-full-width">
+              <mat-label>First Name</mat-label>
+              <input matInput formControlName = "firstName">
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+                <mat-label>Last Name</mat-label>
+                <input matInput formControlName = "lastName">
+              </mat-form-field>
+
+              <mat-form-field class="example-full-width">
+                <mat-label>Position</mat-label>
+                <input matInput formControlName = "postion">
+              </mat-form-field>
+
+              <mat-form-field class="example-full-width">
+                <mat-label>Salary</mat-label>
+                <input matInput formControlName = "salary">
+              </mat-form-field>
+            </div>
+
+    </mat-card-content>
+
+    <mat-card-actions align="end">
+        <button mat-raised-button color="warn" class="actionButton" (click)="onCancel()" type="button">Cancel</button>
+        <button mat-raised-button color="primary" class="actionButton" type="submit" [disabled]="employeeForm.invalid">Create</button>
+    </mat-card-actions>
+</mat-card>
+</form>
+</div>
+</div>

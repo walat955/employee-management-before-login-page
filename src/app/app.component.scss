@@ -1,0 +1,45 @@
+#menuTitle{
+    font-size: medium;
+    margin-right: 20px;
+    color: white;
+    
+}
+.toolbar{
+    background-color:#3F51B5;
+    color: white;
+    height: 72px;
+  }
+  #menuIcon{
+    color: white;
+  }
+    @media (min-width: 900px){
+        #menuIcon{
+            display: none;
+        }
+        .mat-sidenav{
+        display: none;
+        }
+    }
+        .top-menu-item{
+            color: white !important;
+        }
+  @media (max-width: 900px){
+    .top-menu-item{
+        display: none;
+    }}
+    .mat-sidenav{
+        background-color: #3F51B5;
+        color: white;
+        width: 160px;
+    }
+    .side-menu-item{
+        color: white !important;
+        margin-top: 10px;
+    }
+    .side-niv-items{
+        display: flexbox;
+        flex-direction:column;
+    }
+    .main-content{
+        margin: 20px;
+    }

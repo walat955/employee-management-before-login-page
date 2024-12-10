@@ -1,0 +1,31 @@
+<div id="deleteForm">
+    <h1 id="deleteEmployeeTitle">Delete Employee</h1>
+    <form [formGroup]="deleteForm" (ngSubmit)="onSubmit()" class="myForm">
+
+    
+            <div class="myInputs">
+            <mat-form-field class="example-full-width">
+              <mat-label class="formInput">First Name</mat-label>
+              <input class="formInput" matInput formControlName = "firstName">
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+                <mat-label class="formInput">Last Name</mat-label>
+                <input class="formInput" matInput formControlName = "lastName" >
+              </mat-form-field>
+
+              <mat-form-field class="example-full-width">
+                <mat-label class="formInput">Position</mat-label>
+                <input class="formInput" matInput formControlName = "position">
+              </mat-form-field>
+
+              <mat-form-field class="example-full-width">
+                <mat-label class="formInput">Salary</mat-label>
+                <input class="formInput" matInput formControlName = "salary">
+              </mat-form-field>
+            </div>
+
+        <button mat-raised-button color="warn" class="actionButton" type="button" (click)="onCancel()">Cancel</button>
+        <button mat-raised-button color="accent" class="actionButton" type="submit">Delete</button>
+</form>
+</div>
